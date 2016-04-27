@@ -1,0 +1,91 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<context:annotation-config />
+
+	<!-- Bean to load properties file -->
+	<bean id="BrowserSettingPlaceholderConfig"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath*:**/BrowserSetting.properties</value>				
+			</list>
+		</property>
+	</bean>
+
+	<bean name="firefox" class="com.loginium.driver.DriverSetting">
+		<property name="browserName" value="${DriverSetting.Firefox.BrowserName}" />
+		<property name="browserVersion" value="${DriverSetting.Firefox.BrowserVersion}" />
+		<property name="platform" value="${DriverSetting.Firefox.Platform}" />
+		<property name="platformVersion" value="${DriverSetting.Firefox.PlatformVersion}" />
+		<property name="remoteURL" value="${DriverSetting.Firefox.RemoteURL}" />
+		<property name="deviceName" value="${DriverSetting.Firefox.DeviceName}" />
+	</bean>
+	
+	<bean name="internet_explorer" class="com.loginium.driver.DriverSetting">
+		<property name="browserName" value="${DriverSetting.InternetExplorer.BrowserName}" />
+		<property name="browserVersion" value="${DriverSetting.InternetExplorer.BrowserVersion}" />
+		<property name="platform" value="${DriverSetting.InternetExplorer.Platform}" />
+		<property name="platformVersion" value="${DriverSetting.InternetExplorer.PlatformVersion}" />
+		<property name="remoteURL" value="${DriverSetting.InternetExplorer.RemoteURL}" />
+		<property name="deviceName" value="${DriverSetting.InternetExplorer.DeviceName}" />
+	</bean>
+	
+	<bean name="chrome" class="com.loginium.driver.DriverSetting">
+		<property name="browserName" value="${DriverSetting.Chrome.BrowserName}" />
+		<property name="browserVersion" value="${DriverSetting.Chrome.BrowserVersion}" />
+		<property name="platform" value="${DriverSetting.Chrome.Platform}" />
+		<property name="platformVersion" value="${DriverSetting.Chrome.PlatformVersion}" />
+		<property name="remoteURL" value="${DriverSetting.Chrome.RemoteURL}" />
+		<property name="deviceName" value="${DriverSetting.Chrome.DeviceName}" />
+	</bean>
+	
+	<bean name="safari" class="com.loginium.driver.DriverSetting">
+		<property name="browserName" value="${DriverSetting.Safari.BrowserName}" />
+		<property name="browserVersion" value="${DriverSetting.Safari.BrowserVersion}" />
+		<property name="platform" value="${DriverSetting.Safari.Platform}" />
+		<property name="platformVersion" value="${DriverSetting.Safari.PlatformVersion}" />
+		<property name="remoteURL" value="${DriverSetting.Safari.RemoteURL}" />
+		<property name="deviceName" value="${DriverSetting.Safari.DeviceName}" />
+	</bean>
+	
+	<bean name="iPad" class="com.loginium.driver.DriverSetting">
+		<property name="browserName" value="${DriverSetting.iPad.BrowserName}" />
+		<property name="browserVersion" value="${DriverSetting.iPad.BrowserVersion}" />
+		<property name="platform" value="${DriverSetting.iPad.Platform}" />
+		<property name="platformVersion" value="${DriverSetting.iPad.PlatformVersion}" />
+		<property name="remoteURL" value="${DriverSetting.iPad.RemoteURL}" />
+		<property name="deviceName" value="${DriverSetting.iPad.DeviceName}" />
+	</bean>
+	
+	<bean name="iPhone" class="com.loginium.driver.DriverSetting">
+		<property name="browserName" value="${DriverSetting.iPhone.BrowserName}" />
+		<property name="browserVersion" value="${DriverSetting.iPhone.BrowserVersion}" />
+		<property name="platform" value="${DriverSetting.iPhone.Platform}" />
+		<property name="platformVersion" value="${DriverSetting.iPhone.PlatformVersion}" />
+		<property name="remoteURL" value="${DriverSetting.iPhone.RemoteURL}" />
+		<property name="deviceName" value="${DriverSetting.iPhone.DeviceName}" />
+	</bean>
+	
+	<bean name="androidReal" class="com.loginium.driver.DriverSetting">
+		<property name="browserName" value="${DriverSetting.androidReal.BrowserName}" />
+		<property name="browserVersion" value="${DriverSetting.androidReal.BrowserVersion}" />
+		<property name="platform" value="${DriverSetting.androidReal.Platform}" />
+		<property name="platformVersion" value="${DriverSetting.androidReal.PlatformVersion}" />
+		<property name="remoteURL" value="${DriverSetting.androidReal.RemoteURL}" />
+		<property name="deviceName" value="${DriverSetting.androidReal.DeviceName}" />
+	</bean>
+	
+	<bean name="androidEmulator" class="com.loginium.driver.DriverSetting">
+		<property name="browserName" value="${DriverSetting.androidEmulator.BrowserName}" />
+		<property name="browserVersion" value="${DriverSetting.androidEmulator.BrowserVersion}" />
+		<property name="platform" value="${DriverSetting.androidEmulator.Platform}" />
+		<property name="platformVersion" value="${DriverSetting.androidEmulator.PlatformVersion}" />
+		<property name="remoteURL" value="${DriverSetting.androidEmulator.RemoteURL}" />
+		<property name="deviceName" value="${DriverSetting.androidEmulator.DeviceName}" />
+	</bean>
+
+</beans>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="100" guice-stage="DEVELOPMENT" name="Failed suite [Improved Suite]">
+  <parameter name="driverSettingID" value="androidEmulator"/>
+  <test name="androidReal">
+    <parameter name="driverSettingID" value="androidReal"/>
+    <classes>
+      <class name="DashboardTest.LoginTest"/>
+    </classes>
+  </test> <!-- androidReal -->
+  <test name="androidEmulator">
+    <parameter name="driverSettingID" value="androidEmulator"/>
+    <classes>
+      <class name="DashboardTest.LoginTest"/>
+    </classes>
+  </test> <!-- androidEmulator -->
+  <test name="androidReal(failed)">
+    <parameter name="driverSettingID" value="androidReal"/>
+    <classes>
+      <class name="DashboardTest.LoginTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="Login1"/>
+        </methods>
+      </class> <!-- DashboardTest.LoginTest -->
+    </classes>
+  </test> <!-- androidReal(failed) -->
+</suite> <!-- Failed suite [Improved Suite] -->

@@ -1,0 +1,1295 @@
+<html>
+<head>
+<title>TestNG:  Internet Explorer</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Internet Explorer</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/10</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 25 13:02:48 ICT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (804 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DashboardTest.LoginTest.beforeMethod()'><b>beforeMethod</b><br>Test class: DashboardTest.LoginTest ()<br>Parameters: internet_explorer</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 161 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace179080244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace179080244'><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 161 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+</pre></div></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.beforeMethod()'><b>beforeMethod</b><br>Test class: DashboardTest.LoginTest ()<br>Parameters: internet_explorer</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 20 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1693202077", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1693202077'><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 20 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+</pre></div></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.beforeMethod()'><b>beforeMethod</b><br>Test class: DashboardTest.LoginTest ()<br>Parameters: internet_explorer</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace48478337", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace48478337'><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+</pre></div></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.beforeMethod()'><b>beforeMethod</b><br>Test class: DashboardTest.LoginTest ()<br>Parameters: internet_explorer</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 11 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1523600230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1523600230'><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 11 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+</pre></div></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.beforeMethod()'><b>beforeMethod</b><br>Test class: DashboardTest.LoginTest ()<br>Parameters: internet_explorer</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1063756304", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1063756304'><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+</pre></div></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.beforeMethod()'><b>beforeMethod</b><br>Test class: DashboardTest.LoginTest ()<br>Parameters: internet_explorer</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 20 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace383218568", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace383218568'><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 20 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+</pre></div></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.beforeMethod()'><b>beforeMethod</b><br>Test class: DashboardTest.LoginTest ()<br>Parameters: internet_explorer</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1951048154", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1951048154'><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+</pre></div></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.beforeMethod()'><b>beforeMethod</b><br>Test class: DashboardTest.LoginTest ()<br>Parameters: internet_explorer</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace973833948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace973833948'><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+</pre></div></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.beforeMethod()'><b>beforeMethod</b><br>Test class: DashboardTest.LoginTest ()<br>Parameters: internet_explorer</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace633805749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace633805749'><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+</pre></div></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.beforeMethod()'><b>beforeMethod</b><br>Test class: DashboardTest.LoginTest ()<br>Parameters: internet_explorer</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 20 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace48998760", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace48998760'><pre>org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Command duration or timeout: 20 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at com.loginium.driver.desktop.DesktopInternetExplorerDriver.&lt;init&gt;(DesktopInternetExplorerDriver.java:29)
+	at com.loginium.driver.factory.DesktopDriverFactory.initWebDriver(DesktopDriverFactory.java:23)
+	at com.loginium.driver.factory.DriverFactory.createWebDriver(DriverFactory.java:18)
+	at com.loginium.driver.DriverManager.createWebDriver(DriverManager.java:42)
+	at DashboardTest.TestBase.beforeMethod(TestBase.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=11, platform=MAC}]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
+System info: host: &apos;lgvn13460&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+</pre></div></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DashboardTest.LoginTest.afterMethod()'><b>afterMethod</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.afterMethod()'><b>afterMethod</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.afterMethod()'><b>afterMethod</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.afterMethod()'><b>afterMethod</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.afterMethod()'><b>afterMethod</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.afterMethod()'><b>afterMethod</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.afterMethod()'><b>afterMethod</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.afterMethod()'><b>afterMethod</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.afterMethod()'><b>afterMethod</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.afterMethod()'><b>afterMethod</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DashboardTest.LoginTest.Login1()'><b>Login1</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.Login10()'><b>Login10</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.Login2()'><b>Login2</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.Login3()'><b>Login3</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.Login4()'><b>Login4</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.Login5()'><b>Login5</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.Login6()'><b>Login6</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.Login7()'><b>Login7</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.Login8()'><b>Login8</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+<tr>
+<td title='DashboardTest.LoginTest.Login9()'><b>Login9</b><br>Test class: DashboardTest.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>DashboardTest.LoginTest@3d8c7aca</td></tr>
+</table><p>
+</body>
+</html>

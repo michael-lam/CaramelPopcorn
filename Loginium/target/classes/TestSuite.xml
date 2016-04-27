@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Improved Suite" parallel="false" thread-count="100">
+	<!-- 	<test name="Firefox"> -->
+	<!-- 		<parameter name='driverSettingID' value='firefox' /> -->
+	<!-- 		<classes> -->
+	<!-- 			<class name="DashboardTest.LoginTest" /> -->
+	<!-- 		</classes> -->
+	<!-- 	</test> -->
+	<!-- 	<test name="Internet Explorer"> -->
+	<!-- 		<parameter name='driverSettingID' value='internet_explorer' /> -->
+	<!-- 		<classes> -->
+	<!-- 			<class name="DashboardTest.LoginTest" /> -->
+	<!-- 		</classes> -->
+	<!-- 	</test> -->
+	<!-- 	<test name="Chrome"> -->
+	<!-- 		<parameter name='driverSettingID' value='chrome' /> -->
+	<!-- 		<classes> -->
+	<!-- 			<class name="DashboardTest.LoginTest" /> -->
+	<!-- 		</classes> -->
+	<!-- 	</test> -->
+	<!-- 	<test name="Safari"> -->
+	<!-- 		<parameter name='driverSettingID' value='safari' /> -->
+	<!-- 		<classes> -->
+	<!-- 			<class name="DashboardTest.LoginTest" /> -->
+	<!-- 		</classes> -->
+	<!-- 	</test> -->
+	<!-- 		<test name="iPad"> -->
+	<!-- 			<parameter name='driverSettingID' value='iPad' /> -->
+	<!-- 			<classes> -->
+	<!-- 				<class name="DashboardTest.LoginTest" /> -->
+	<!-- 			</classes> -->
+	<!-- 		</test> -->
+	<!-- 		<test name="iPhone"> -->
+	<!-- 			<parameter name='driverSettingID' value='iPhone' /> -->
+	<!-- 			<classes> -->
+	<!-- 				<class name="DashboardTest.LoginTest" /> -->
+	<!-- 			</classes> -->
+	<!-- 		</test> -->
+	<test name="androidReal">
+		<parameter name='driverSettingID' value='androidReal' />
+		<classes>
+			<class name="DashboardTest.LoginTest" />
+		</classes>
+	</test>
+	<test name="androidEmulator">
+		<parameter name='driverSettingID' value='androidEmulator' />
+		<classes>
+			<class name="DashboardTest.LoginTest" />
+		</classes>
+	</test>
+</suite>

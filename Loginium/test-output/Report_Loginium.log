@@ -1,0 +1,10 @@
+04-22-2016 2:56:39 PM [TestNG] - REPORT - com.loginium.testng.LoginiumTestListener [Thread ID: 13 - 192.168.171.127 - WINDOWS - FIREFOX] - testContext.getAllTestMethods() 2
+04-22-2016 2:56:39 PM [TestNG] - REPORT - com.loginium.testng.LoginiumTestListener [Thread ID: 13 - 192.168.171.127 - WINDOWS - FIREFOX] - testContext.getName() Firefox
+04-22-2016 2:56:39 PM [TestNG] - REPORT - com.loginium.testng.LoginiumTestListener [Thread ID: 13 - 192.168.171.127 - WINDOWS - FIREFOX] -  2
+04-22-2016 2:56:39 PM [TestNG] - REPORT - com.loginium.testng.LoginiumTestListener [Thread ID: 13 - 192.168.171.127 - WINDOWS - FIREFOX] - Testcase: Login2, Testclass: DashboardTest.LoginTest, Result: SUCCESS, Duration: 0.736
+04-22-2016 2:56:39 PM [TestNG] - REPORT - com.loginium.testng.LoginiumTestListener [Thread ID: 13 - 192.168.171.127 - WINDOWS - FIREFOX] - Testcase: Login1, Testclass: DashboardTest.LoginTest, Result: SUCCESS, Duration: 0.440
+04-22-2016 2:56:47 PM [TestNG] - REPORT - com.loginium.testng.LoginiumTestListener [Thread ID: 14 -  - WINDOWS - CHROME] - testContext.getAllTestMethods() 2
+04-22-2016 2:56:47 PM [TestNG] - REPORT - com.loginium.testng.LoginiumTestListener [Thread ID: 14 -  - WINDOWS - CHROME] - testContext.getName() Chrome
+04-22-2016 2:56:47 PM [TestNG] - REPORT - com.loginium.testng.LoginiumTestListener [Thread ID: 14 -  - WINDOWS - CHROME] -  2
+04-22-2016 2:56:47 PM [TestNG] - REPORT - com.loginium.testng.LoginiumTestListener [Thread ID: 14 -  - WINDOWS - CHROME] - Testcase: Login1, Testclass: DashboardTest.LoginTest, Result: SUCCESS, Duration: 5.817
+04-22-2016 2:56:47 PM [TestNG] - REPORT - com.loginium.testng.LoginiumTestListener [Thread ID: 14 -  - WINDOWS - CHROME] - Testcase: Login2, Testclass: DashboardTest.LoginTest, Result: SUCCESS, Duration: 5.826

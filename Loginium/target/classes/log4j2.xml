@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info" name="Loginium" packages="com.loginium.report">
+
+	<properties>
+		<property name="patternlayout">%d{MM-dd-yyyy h:mm:ss a} [%level] - %logger%thd - %m%n</property>
+		<property name="debugfilename">test-output/Debug_Loginium.log</property>
+		<!-- 		<property name="reportfilename">test-output/Report_Loginium.log</property> -->
+		<property name="filenamePattern">test-output/Loginium-%d{MM-dd-yyyy}-%i.log.zip</property>
+	</properties>
+
+	<!-- 	<CustomLevels> -->
+	<!-- 		<CustomLevel name="REPORT" intLevel="350" /> -->
+	<!-- 	</CustomLevels> -->
+
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="${patternlayout}" />
+		</Console>
+
+		<!-- 		<File name="ReportFile" fileName="${reportfilename}" append="false"> -->
+		<!-- 			<PatternLayout pattern="${patternlayout}" /> -->
+		<!-- 		</File> -->
+
+		<RollingFile name="DebugRollingFile" fileName="${debugfilename}" filePattern="${filenamePattern}" append="true">
+			<PatternLayout pattern="${patternlayout}" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="100 MB" />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="DebugRollingFile" level="info" />
+			<AppenderRef ref="Console" level="info" />
+			<!-- 			<AppenderRef ref="ReportFile" level="report" /> -->
+		</Root>
+	</Loggers>
+</Configuration>
