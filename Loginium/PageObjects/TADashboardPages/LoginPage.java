@@ -22,7 +22,7 @@ public class LoginPage {
 	@Resource(name = "btnLogin")
 	private Element btnLogin;
 
-	public static synchronized LoginPage init() {
+	public static LoginPage init() {
 		if (instance == null) {
 			context = new ClassPathXmlApplicationContext(
 					new String[] { "TADashboardResources/LoginPage.xml"});
